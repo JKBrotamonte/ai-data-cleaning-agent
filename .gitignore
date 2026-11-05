@@ -1,0 +1,19 @@
+# Secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Job outputs and your own files: only the demo input is committed
+jobs/*/
+!jobs/demo/
+jobs/demo/work/
+jobs/demo/output/
+costs.csv
+logs/
+
+# Benchmark jobs are regenerated from the seed
+benchmark/jobs/

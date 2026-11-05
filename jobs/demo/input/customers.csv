@@ -1,0 +1,9 @@
+customer_id,name,email,phone,signup_date,city,plan
+1001, Ana Torres ,Ana.Torres@Example.com,(201) 555-0123,2024-03-03,Houston,Pro
+1002,Ben Okafor,ben.okafor@example.com,201.555.0188,03/04/2024,huston,basic
+1003,Chloe Park,CHLOE@EXAMPLE.COM,2015550142,"March 5th, 2024",Houston ,Pro
+1004,Dev Patel,dev@example,N/A,2024-03-06,Dallas,n/a
+1002,Ben Okafor,ben.okafor@example.com,201.555.0188,03/04/2024,huston,basic
+1005,Eli  Brooks,eli.brooks@example.com,+1 201 555 0177,2024/03/07,Dallas,Basic
+,,,,,,
+1006,Fay Nguyen,fay.nguyen@example.com,201-555-0199,7 March 2024,Austin,pro

@@ -1,0 +1,9 @@
+anthropic
+pandas
+openpyxl
+pyyaml
+dateparser
+rapidfuzz
+phonenumbers
+email-validator
+python-dotenv

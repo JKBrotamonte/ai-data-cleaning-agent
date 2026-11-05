@@ -1,0 +1,25 @@
+# Intake step: profile the file and turn the request into checkable requirements.
+
+agent:
+  name: intake
+  role: "Profile the file, list requirements and blocking questions. Never sees the full file."
+
+model:
+  name: claude-haiku-5-5
+  max_tokens: 8000
+
+budget:
+  monthly_cap_usd: 3          # also set a spending limit on the API key itself
+
+# Anthropic list price, checked 2026-10-14. Update if pricing changes.
+pricing_usd_per_million_tokens:
+  input: 0.10
+  output: 0.50
+
+sample_rows: 20               # what may reach the model is set by ai_data_sharing in request.md
+max_questions: 4
+max_rows: 1000000             # larger files are refused before any model call
+max_columns: 200
+
+paths:
+  system_prompt: "cleaner_agent/intake/system_prompt.md"

@@ -1,0 +1,30 @@
+# Cleaner step: the model plans from the fixed operation list in ops.py; code applies the plan.
+
+agent:
+  name: cleaner
+  role: "Plan cleaning steps from a fixed operation list; code applies them. Never sees the full file."
+
+model:
+  name: claude-sonnet-5-5     # planning is the judgment-heavy step
+  max_tokens: 16000
+
+budget:
+  monthly_cap_usd: 10         # also set a spending limit on the API key itself
+
+# Anthropic list price, checked 2026-10-14. Update if pricing changes.
+pricing_usd_per_million_tokens:
+  input: 2.00
+  output: 10.00
+
+sample_rows: 20
+
+# Steps that delete or change the meaning of data wait for your y/n in the terminal before they run.
+# Partial-match drop_duplicates always counts. Remove an op here to let it run unattended.
+approval_required_ops: [drop_duplicates, drop_columns, filter_rows, fill_missing, regex_replace, merge_columns, replace_values, split_column]
+approval_rows_removed_share: 0.05   # any step removing more than this share of rows also needs approval
+
+max_steps: 40                 # longest plan allowed
+max_fix_attempts: 2           # extra model calls when a plan fails its test run
+
+paths:
+  system_prompt: "cleaner_agent/cleaner/system_prompt.md"

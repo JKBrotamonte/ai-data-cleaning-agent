@@ -1,0 +1,22 @@
+# QA step: check the cleaned file in code; the model only writes the report summary, from counts.
+
+agent:
+  name: qa
+  role: "Check cleaned files in code and write the cleaning report. Never sees data values."
+
+model:
+  name: claude-haiku-5-5
+  max_tokens: 4000
+
+budget:
+  monthly_cap_usd: 2          # also set a spending limit on the API key itself
+
+# Anthropic list price, checked 2026-10-14. Update if pricing changes.
+pricing_usd_per_million_tokens:
+  input: 0.10
+  output: 0.50
+
+max_rows_removed_share: 0.2   # warn when more than this share of rows is removed
+
+paths:
+  system_prompt: "cleaner_agent/qa/system_prompt.md"

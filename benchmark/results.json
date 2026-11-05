@@ -1,0 +1,235 @@
+{
+  "customers": {
+    "qa_passed": true,
+    "cost_usd": 0.0574,
+    "seconds": 44.1,
+    "plans": 1,
+    "score": {
+      "fixed": 111,
+      "total": 111,
+      "by_kind": {
+        "email_case": [
+          15,
+          15
+        ],
+        "category_typo": [
+          15,
+          15
+        ],
+        "phone_format": [
+          26,
+          26
+        ],
+        "date_format": [
+          18,
+          18
+        ],
+        "missing_marker": [
+          5,
+          5
+        ],
+        "whitespace": [
+          21,
+          21
+        ],
+        "duplicate_row": [
+          8,
+          8
+        ],
+        "empty_row": [
+          3,
+          3
+        ]
+      },
+      "broke_cells": 0,
+      "missing_rows": 0,
+      "missing_columns": [],
+      "broke_examples": [],
+      "clean_cells_checked": 2000
+    }
+  },
+  "orders": {
+    "qa_passed": true,
+    "cost_usd": 0.0484,
+    "seconds": 38.5,
+    "plans": 1,
+    "score": {
+      "fixed": 107,
+      "total": 110,
+      "by_kind": {
+        "whitespace": [
+          23,
+          23
+        ],
+        "category_typo": [
+          22,
+          24
+        ],
+        "date_format": [
+          20,
+          20
+        ],
+        "number_format": [
+          24,
+          24
+        ],
+        "missing_marker": [
+          7,
+          8
+        ],
+        "duplicate_row": [
+          8,
+          8
+        ],
+        "empty_row": [
+          3,
+          3
+        ]
+      },
+      "broke_cells": 0,
+      "missing_rows": 0,
+      "missing_columns": [],
+      "broke_examples": [],
+      "clean_cells_checked": 1701
+    }
+  },
+  "employees": {
+    "qa_passed": true,
+    "cost_usd": 0.0558,
+    "seconds": 48.5,
+    "plans": 1,
+    "score": {
+      "fixed": 111,
+      "total": 111,
+      "by_kind": {
+        "date_format": [
+          21,
+          21
+        ],
+        "number_format": [
+          20,
+          20
+        ],
+        "phone_format": [
+          14,
+          14
+        ],
+        "whitespace": [
+          24,
+          24
+        ],
+        "category_typo": [
+          19,
+          19
+        ],
+        "missing_marker": [
+          2,
+          2
+        ],
+        "duplicate_row": [
+          8,
+          8
+        ],
+        "empty_row": [
+          3,
+          3
+        ]
+      },
+      "broke_cells": 0,
+      "missing_rows": 0,
+      "missing_columns": [],
+      "broke_examples": [],
+      "clean_cells_checked": 1700
+    }
+  },
+  "registrations": {
+    "qa_passed": true,
+    "cost_usd": 0.0461,
+    "seconds": 36.9,
+    "plans": 1,
+    "score": {
+      "fixed": 105,
+      "total": 105,
+      "by_kind": {
+        "email_case": [
+          26,
+          26
+        ],
+        "number_format": [
+          17,
+          17
+        ],
+        "date_format": [
+          20,
+          20
+        ],
+        "category_typo": [
+          14,
+          14
+        ],
+        "whitespace": [
+          16,
+          16
+        ],
+        "missing_marker": [
+          1,
+          1
+        ],
+        "duplicate_row": [
+          8,
+          8
+        ],
+        "empty_row": [
+          3,
+          3
+        ]
+      },
+      "broke_cells": 0,
+      "missing_rows": 0,
+      "missing_columns": [],
+      "broke_examples": [],
+      "clean_cells_checked": 1406
+    }
+  },
+  "inventory": {
+    "qa_passed": true,
+    "cost_usd": 0.0516,
+    "seconds": 38.1,
+    "plans": 1,
+    "score": {
+      "fixed": 102,
+      "total": 108,
+      "by_kind": {
+        "category_typo": [
+          14,
+          20
+        ],
+        "date_format": [
+          28,
+          28
+        ],
+        "whitespace": [
+          26,
+          26
+        ],
+        "number_format": [
+          23,
+          23
+        ],
+        "duplicate_row": [
+          8,
+          8
+        ],
+        "empty_row": [
+          3,
+          3
+        ]
+      },
+      "broke_cells": 0,
+      "missing_rows": 0,
+      "missing_columns": [],
+      "broke_examples": [],
+      "clean_cells_checked": 1703
+    }
+  }
+}
